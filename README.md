@@ -2,7 +2,7 @@
 
 Sign-up page built with HTML, CSS, and JavaScript. Basic form validation, only checking for required fields and if passwords match. First attempt at light/dark mode toggling.
 
-[Live Demo - GitHub Pages](https://github.com/lukeramljak/signup-form)
+[Live Demo - GitHub Pages](https://lukeramljak.github.io/signup-form/)
 
 ## Dark mode
 
