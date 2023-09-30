@@ -44,14 +44,16 @@ main {
 }
 
 .theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.theme-toggle button {
   border: none;
   cursor: pointer;
   background-color: transparent;
   color: var(--text);
-  width: 3rem;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
 }
 
 .hidden {
@@ -70,28 +72,35 @@ main {
   background-color: var(--background-transparent);
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
   padding: 1rem 0;
   position: absolute;
   top: 30%;
   width: 100%;
 }
 
-.logo span {
+.material-symbols-outlined.logo-icon {
+  font-size: 48px;
+}
+
+.name {
+  font-family: "Comfortaa", sans-serif;
   font-size: clamp(2rem, 4vw, 4rem);
   font-weight: bold;
 }
 
 .section-image p {
-  color: var(--accent);
   font-size: 0.75rem;
   text-align: center;
   position: absolute;
   bottom: 1rem;
 }
 
+.section-image p,
 .section-image a,
 .section-image a:visited {
-  color: var(--accent);
+  color: hsl(0, 0%, 100%);
 }
 
 .section-form {
