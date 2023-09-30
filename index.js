@@ -1,5 +1,3 @@
-const themeToggle = document.querySelector(".theme-toggle");
-
 function changeTheme() {
   const light = document.querySelector(".toggle-light");
   const dark = document.querySelector(".toggle-dark");
@@ -14,4 +12,20 @@ function changeTheme() {
   }
 }
 
+function checkPasswords(e) {
+  const pwField = document.getElementById("password");
+  const pwConfirmField = document.getElementById("password-confirm");
+  const pwError = document.querySelector(".password-error");
+
+  if (pwField.value !== pwConfirmField.value) {
+    e.preventDefault();
+    pwField.classList.add("invalid");
+    pwConfirmField.classList.add("invalid");
+    pwError.classList.remove("hidden");
+  }
+}
+
+const themeToggle = document.querySelector(".theme-toggle");
+const form = document.getElementById("signup");
 themeToggle.addEventListener("click", changeTheme);
+form.addEventListener("submit", checkPasswords);
