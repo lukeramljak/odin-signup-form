@@ -73,15 +73,16 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem 0;
+  padding: 3rem 0;
+  gap: 0.5rem;
   position: absolute;
   top: 30%;
   width: 100%;
 }
 
-.material-symbols-outlined.logo-icon {
-  font-size: 48px;
+svg {
+  fill: var(--text);
+  width: clamp(2rem, 4vw, 4rem);
 }
 
 .name {
