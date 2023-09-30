@@ -34,12 +34,28 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--background);
   color: var(--text);
+  position: relative;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   height: 100vh;
+}
+
+.theme-toggle {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--text);
+  width: 3rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .section-image {
