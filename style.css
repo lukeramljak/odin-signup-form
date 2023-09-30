@@ -1,6 +1,7 @@
 :root[data-theme="light"] {
   --text: hsl(0, 0%, 0%);
   --background: hsl(200, 60%, 97%);
+  --background-transparent: hsl(200, 60%, 97%, 0.8);
   --primary: hsl(199, 62%, 25%);
   --secondary: hsl(200, 65%, 90%);
   --accent: hsl(199, 63%, 50%);
@@ -8,6 +9,7 @@
 :root[data-theme="dark"] {
   --text: hsl(0, 0%, 100%);
   --background: hsl(200, 60%, 3%);
+  --background-transparent: hsl(200, 60%, 3%, 0.8);
   --primary: hsl(199, 62%, 75%);
   --secondary: hsl(200, 65%, 10%);
   --accent: hsl(199, 63%, 50%);
@@ -49,7 +51,7 @@ main {
 }
 
 .logo {
-  background-color: var(--background);
+  background-color: var(--background-transparent);
   display: flex;
   justify-content: center;
   padding: 1rem 0;
