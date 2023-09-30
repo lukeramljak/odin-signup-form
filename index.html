@@ -1,17 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up | Codenest</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Codenest</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/photos/an-escalator-that-has-some-lights-on-it-GogiihDbpyA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="container-left">
+        <div class="logo">
+          <span>Codenest</span>
+        </div>
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank"
+            >Markus Spiske</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/an-escalator-that-has-some-lights-on-it-GogiihDbpyA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank"
+            >Unsplash</a
+          >
+        </p>
+      </section>
+      <section class="container-right">
+        <div class="heading">
+          <h1>Where Innovation Meets Excellence</h1>
+          <h2>
+            At Codenest, we are on a mission to empower individuals and
+            businesses with cutting-edge technology solutions. We believe in the
+            transformative power of code and its ability to shape a brighter
+            future.
+          </h2>
+        </div>
+        <form id="signup" novalidate>
+          <div class="input-container">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" required />
+          </div>
+          <div class="input-container">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" required />
+          </div>
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="input-container">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" required />
+          </div>
+          <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" name="password" required />
+          </div>
+          <div class="input-container">
+            <label for="password-confirm">Confirm Password</label>
+            <input type="password" name="password-confirm" required />
+          </div>
+        </form>
+        <input type="submit" form="signup" value="Create Account" />
+        <p class="login">Already have an account? <a href="#">Log in</a></p>
+      </section>
+    </main>
+  </body>
 </html>
